@@ -1,0 +1,33 @@
+# Web Framework & Server
+Flask==2.3.3
+Werkzeug==2.3.7
+Jinja2==3.1.6
+itsdangerous==2.2.0
+click==8.3.1
+blinker==1.9.0
+gunicorn==23.0.0
+
+# Database & Authentication
+firebase_admin==7.1.0
+Pyrebase4==4.8.0
+mysql-connector-python==9.5.0
+PyMySQL==1.0.3
+Flask-Login==0.6.2
+python-dotenv==1.0.0
+
+# API & Utils
+requests==2.32.5
+PyJWT==2.10.1
+cryptography==46.0.3
+python-dateutil==2.9.0.post0
+pytz==2025.2
+certifi==2026.1.4
+
+# ML/Data (Optional - agar aapka app model use karta hai)
+scikit-learn==1.8.0
+scipy==1.16.3
+joblib==1.5.3
+
+# Other Essentials
+yt-dlp==2025.12.8
+beautifulsoup4==4.14.3
