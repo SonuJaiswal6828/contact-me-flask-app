@@ -64,7 +64,7 @@ def login():
 @app.route('/logout')
 def logout():
     session.pop('user', None)
-    return redirect('login.html')
+    return redirect('/login')
 
 if __name__ == '__main__':
     app.run(debug=True)
