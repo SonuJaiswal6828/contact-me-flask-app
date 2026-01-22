@@ -3,6 +3,8 @@ from dotenv import load_dotenv
 import os
 #=========================================================================================================
 import pyrebase
+load_dotenv()
+
 config = {
   "apiKey": "",
   "authDomain": os.getenv("FB_API_KEY"),
@@ -18,7 +20,7 @@ db = firebase.database()
 
 #=========================================================================================================
 app =Flask(__name__)
-app.secret_key = "sonu123"
+app.secret_key = os.getenv("SECRET_KEY")
 
 @app.route('/', methods=['GET','POST'])
 def home():
@@ -54,7 +56,7 @@ def login():
     if request.method == 'POST':
         password = request.form.get('pass')
         email = request.form.get('email')
-        if password == 'password' and email == os.getenv("ADMIN_EMAIL"):
+        if password == os.getenv("ADMIN_PASSWORD") and email == os.getenv("ADMIN_EMAIL"):
             session['user'] = email
             return redirect('/admin')
         else: 
