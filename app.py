@@ -6,8 +6,8 @@ import pyrebase
 load_dotenv()
 
 config = {
-  "apiKey": "",
-  "authDomain": os.getenv("FB_API_KEY"),
+  "apiKey": os.getenv("FB_API_KEY"),
+  "authDomain": "first-flask-app-dbcbf.firebaseapp.com",
   "projectId": "first-flask-app-dbcbf",
   "storageBucket": "first-flask-app-dbcbf.firebasestorage.app",
   "messagingSenderId": "119762745195",
